@@ -1,4 +1,4 @@
-name: Echo PR Title
+name: Echo PR Title action
 
 on: ["pull_request"]
 
