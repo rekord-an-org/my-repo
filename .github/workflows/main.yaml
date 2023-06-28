@@ -1,0 +1,17 @@
+name: Echo PR Title
+
+on:
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  echo_title:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Echo PR Title
+        run: echo "PR Title: ${{ github.event.pull_request.title }}"
