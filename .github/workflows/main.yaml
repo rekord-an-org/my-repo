@@ -1,9 +1,6 @@
 name: Echo PR Title
 
-on:
-  pull_request:
-    types:
-      - opened
+on: ["pull_request"]
 
 jobs:
   echo_title:
